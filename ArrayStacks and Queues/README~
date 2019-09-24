@@ -1,0 +1,44 @@
+1. README
+  Name: Nitisha Bhandari
+
+  How to compile:
+
+  How to run:
+
+  Known bugs and limitations:
+
+  Write Up:
+      The TwoStacksQueue uses two ArrayStack objects as instance variables
+      and my program uses the first stack to store the elements and the
+      second one to move the elements around when stack1 needs to be reversed.
+      The items are added to the queue in a regular fashion, using enqueue.
+
+      For dequeue, the items in the first stack are popped and immediately pushed
+      into the second stack, which results in the first item entered in the
+      queue to be the last item to be pushed in the stack, making it the top
+      of the stack. Then, the pop is used to remove the item and everything is
+      then popped from the second stack and pushed back into the first. This
+      operation uses two loops, but because they are not nested, it is still an
+      order of n+n = 2n, hence O(n). The same strategy is used to get the first
+      and to print the stack, making the whole class run at O(n) in the worst
+      case.
+
+      The NewStack object uses an integer array to store implement the basic
+      functions of a stack, and uses an ArrayStack to store the minimums from
+      every time a change is made in the stack. In the push method, there are
+      conditions that check if the new element to be pushed to the stack is
+      greater than, equal or less than the current minimum, which is the top of
+      the minimum ArrayStack. If the new element is less than or equal to the
+      current minimum, it is added to the minimum ArrayStack along with the main
+      stack for integers, so that it is now the top and hence the most recent
+      minimum.When popping the main stack, the if statements check if the top of
+      the stack and the top of the minimum stack is the same, and if it is, it
+      pops both the stacks, making the new minimum the previous one.
+
+      The ArrayStack is only being used to get the top of the stack, making this
+      operation O(1). There are multiple statements to check different conditions
+      but there is no loop, so the complexity still remains O(n).
+
+2. Source files: Main.java, ArrayDeque.java, TwoStacksQueue.java, NewStack.java
+
+3. Data files used: None.
