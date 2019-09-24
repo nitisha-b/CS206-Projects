@@ -1,0 +1,37 @@
+1. README: The usual plain text file README
+
+  Name: Nitisha Bhandari
+
+  How to compile:
+
+  How to run it:
+
+2. Known Bugs and Limitations: The program takes a very long time to run/does
+                              not run for some random numbers that are not
+                              zipcodes.
+
+                              It prints out "No such zipcodes" when
+                              nothing is entered in the input stream.
+      Discussion:
+                 Assignment 2 uses a loops that go through all the elements in
+                 the ArrayList to find a particular zipcode when weaving the two
+                 files together and also while searching for the user-input zip.
+                 The time command results for this assignment are as follows:
+
+                    real	0m35.685s
+                    user	0m36.267s
+                    sys	0m0.103s
+
+                Assignment 5, however, uses a binary search to weave the files as
+                well as to search the user-input zipcodes. The binary search
+                makes a significant difference in the time it takes to read the
+                files and also to go through the ArrayList. The time results for
+                this assignment are as follows:
+
+                  real	0m0.504s
+                  user	0m1.272s
+                  sys	0m0.086s
+
+Source files: Main.java, Place.java, LocatedPlace.java, PopulatedPlace.java, LookupZip.java
+
+Data files used: uszipcodes.csv, ziplocs.csv
