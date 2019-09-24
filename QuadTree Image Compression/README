@@ -1,0 +1,28 @@
+1. README 
+	
+	Names: Nitisha Bhandari, Nigina Daniyarova
+	
+	How to compile: 
+	
+	How to run it: java Main -i <filename> -o <output name> -c/-e -t (in no particular order)
+	
+	Known Bugs and Limitations:
+	
+		The thresholds used to compress the pictures are tested by checking the
+		compression levels using (# of leaves/dimension) to approximately match the 
+		compression levels in the project description. 
+		
+		The threshold used to call QuadTree for edge detection is pre-defined so 
+		it is enough to trace the QuadTree. 
+		
+		The "threshold" used to decide when to set the pixels to black in the edge 
+		detection method is also tested and hence pre-defined, and not calculated 
+		on the fly. 
+		
+		The edge detection method does not always return pictures that are only black
+		and white, but sometimes contains other colors too.
+		
+2. Source files: all .java Files
+
+
+	
