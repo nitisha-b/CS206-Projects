@@ -1,0 +1,31 @@
+1. Name: Nitisha Bhandari
+
+   How to compile: javac *.java
+
+   How to run it:
+
+   Known Bugs and Limitations: The cumulative rank for each name for all the years
+                            totaled is not computed correctly
+
+  Write Up: My Name class uses a String, an ArrayList of Info object, and an
+            integer of total names as instance variables. The yearly statistics
+            is stored in the ArrayList of Info objects, the total for each name
+            for all years is an instance variable for the Name object and the
+            total babies for each gender for each file is stored in Arraylists
+            created in Main and passed as parameters to update in the ReadFile
+            class. The total for all files for all years is calculated in the
+            Main. The linked lists are kept in alphabetically sorted order
+            by using the insertSorted method in the NameDLL class. The new names
+            are inserted in a sorted manner in the linked lists and the information
+            for the already existing names are updated in the readFile method.
+            For the total rank, I use a findRank method in the NameDLL that
+            takes in a Name object as a parameter and returns the rank, an integer.
+            The method uses a while loop that traverses through the linked list
+            as long as the total for the name object for all files is greater than
+            the total for other names in the list, it increments a counter
+            variable and when the total is less than the other total, it returns the
+            counter variable + 1.
+
+2. Source files: Main.java, Name.java, Info.java, NameDLL.java, ReadFile.java
+
+3. Data files used: the entire names data file folder
