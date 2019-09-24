@@ -1,0 +1,25 @@
+1. README: The usual plain text file README
+
+  Name: Nitisha Bhandari
+
+  How to compile:
+
+  How to run it:
+
+2. Known Bugs and Limitations:
+
+      Discussion: The peekTopN method takes in an integer as a parameter that is
+                  the "n" that the user inputs. The ArrayList is copied into a new
+                  ArrayList, called copy. Then the ArrayList is sorted using
+                  the Collections.sort() function from the highest percentage to
+                  the lowest. In a loop that goes from 0 to "n" the user-input
+                  number, the first index of the ArrayList is saved into a
+                  temporary variable and that variable is added to a new
+                  ArrayList, topN, that stores the top n elements. When the loop
+                  ends, the topN ArrayList will have the number of top elements
+                  the user asked for, and the ArrayList is returned.
+
+
+Source files: all .java files
+
+Data files used: all .csv files
